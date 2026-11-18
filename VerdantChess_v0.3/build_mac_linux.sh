@@ -3,5 +3,5 @@
 set -e
 python3 -m pip install --upgrade pip
 python3 -m pip install chess pyinstaller
-python3 -m PyInstaller --noconfirm --onefile --windowed --name VerdantChess chess_app.py
+python3 -m PyInstaller --noconfirm --onefile --windowed --name VerdantChess --hidden-import pieces_data chess_app.py
 echo "Done! Your app is in the dist/ folder."
